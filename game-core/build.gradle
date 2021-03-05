@@ -1,0 +1,24 @@
+version = '1.0.0-SNAPSHOT'
+jar.enabled = true
+bootJar.enabled = false
+
+dependencies {
+    compile "org.apache.commons:commons-lang3"
+    compile "cn.hutool:hutool-core"
+    implementation "org.slf4j:slf4j-api"
+    implementation "com.fasterxml.jackson.core:jackson-databind"
+    //implementation "com.fasterxml.jackson.core:jackson-annotations"
+    implementation "com.google.guava:guava"
+    implementation "org.springframework:spring-context"
+
+    implementation "org.springframework.boot:spring-boot-starter"
+    annotationProcessor "org.springframework.boot:spring-boot-autoconfigure-processor"
+    annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
+
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    testCompileOnly 'org.projectlombok:lombok'
+    testAnnotationProcessor 'org.projectlombok:lombok'
+}

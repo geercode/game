@@ -1,0 +1,23 @@
+rootProject.name = 'game'
+//核心代码
+include 'game-core'
+//存根
+include 'game-stub'
+//存储服务器
+include 'game-record'
+//门面
+include 'game-facade'
+//中心服务器
+include 'game-center'
+//网关服务器
+include 'game-gate'
+//聊天服务器
+include 'game-chat'
+//逻辑服务器
+include 'game-logic'
+//战斗服务器
+include 'game-battle'
+//场景服务器
+include 'game-scene'
+//启动器
+include 'game-launch'

@@ -1,0 +1,25 @@
+version = '1.0.0-SNAPSHOT'
+jar.enabled = true
+bootJar.enabled = true
+
+dependencies {
+    compile "org.slf4j:slf4j-api"
+    compile project(':game-core')
+    compile project(':game-stub')
+    compile project(':game-record')
+    compile project(':game-center')
+    compile project(':game-gate')
+    compile project(':game-chat')
+    compile project(':game-logic')
+    compile project(':game-battle')
+    compile project(':game-scene')
+
+    implementation "org.springframework.boot:spring-boot-starter-webflux"
+
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    testCompileOnly 'org.projectlombok:lombok'
+    testAnnotationProcessor 'org.projectlombok:lombok'
+}
